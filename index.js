@@ -141,7 +141,9 @@ function CommandTakes(message) {
     const aiProgram = flirtResponses[Math.floor(Math.random() * flirtResponses.length)]
     speak(aiProgram)
   }
-
+    else if(message.includes("what's your name") || message.includes("what's your name")){
+     speak("My name is Jennifer  and i'm virtual assistant");
+    }
   else if(message.includes('who developed you') || message.includes("who is you developer") || message.includes("your developer")){
     speak(`I was developed by ${developerName}.`);
   }
